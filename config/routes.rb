@@ -6,7 +6,10 @@ Rails.application.routes.draw do
   get 'now_following' => 'epicenter#now_following'
 
   get 'unfollow' => 'epicenter#unfollow'
+
   post 'epi_tweet' => 'epicenter#epi_tweet'
+
+  get 'tag tweets' => 'epicenter#tag_tweets'
 
   resources :tweets
   devise_for :users
@@ -14,3 +17,4 @@ Rails.application.routes.draw do
 
   
 end
+
